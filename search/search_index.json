@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to Trisha's Course Notes","text":"<p>This is my home page. I will use it to organize and share my course notes.</p>"},{"location":"tutorials/rust-setup/","title":"Setting up a dev container for Rust","text":"<ul> <li>Primary author: Trisha</li> </ul>"}]}
