@@ -3,3 +3,6 @@
 * Primary author: [Trisha](https://github.com/trisv1)
 
 * Reviewer: [Cassidy Lowe](https://github.com/calowe2)
+!!! note
+
+    This is me proving I can add an admonition to the page!
