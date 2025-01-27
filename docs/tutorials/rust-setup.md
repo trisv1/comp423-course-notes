@@ -104,8 +104,6 @@ Add the following code to your devcontainer.json file:
 	"image": "mcr.microsoft.com/devcontainers/rust:latest",
 	"customizations": {
         "vscode": {
-        "settings": {
-        "go.useLanguageServer": true
     },
     "extensions": [
       "rust-lang.rust-analyzer"
