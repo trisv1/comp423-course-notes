@@ -181,7 +181,7 @@ git commit -m "Hello World in Rust!"
 **Note**: If you get the following error
 
 fatal: detected dubious ownership in repository at '/workspaces/go-project'
-To add an exception for this directory, call: git config --global --add safe.directory /workspaces/go-project
+To add an exception for this directory, call: git config --global --add safe.directory /workspaces/rust-project
 
 Run the code as it says 
 
