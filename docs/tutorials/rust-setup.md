@@ -104,15 +104,97 @@ Add the following code to your devcontainer.json file:
 
 ``` yaml
 {
-	"name": "Rust Project",
-	"image": "mcr.microsoft.com/devcontainers/rust:latest",
-	"customizations": {
+	"name": "Rust Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/rust:latest",
+    "customizations": {
         "vscode": {
-    },
-    "extensions": [
-      "rust-lang.rust-analyzer"
-    ]
-  }
+            "extensions": [
+                "rust-lang.rust-analyzer"
+            ]
+        }
+    }
 }
-}
+
 ```  
+This file sets up your dev container environment ensuring that it is consistent and reproducible. Here we specify that the name of our dev container is "Rust Project". Image is the image Docker is going to use, customizations adds useful configurations to VS Code such as telling it to use the Rust Language Analyzer, and our extensions installs Rust in the container so that we do not need to install on our host machine.  
+
+### Step 5: Reopen the Dev Container
+
+Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option.  
+
+Run the Command 
+
+``` yaml
+rustc --version
+```
+
+to prove a recent version of Rust
+
+
+### Step 6: Try it Out by Adding a Hello World Example
+
+Create a new Hello World directory using the following command
+
+``` yaml
+cargo new hello_world --vcs none
+```
+
+Next move into the hellow-world directory with the following command:
+
+``` yaml
+cd hello_world
+```
+
+There should already exist a main.rs file with the following code:
+
+``` yaml
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+### Step 7: Compile and Run Your Project 
+
+Run the following code to compile and run your project!
+
+``` yaml
+cargo build
+```
+
+This command is similar to the command gcc which we learned in 211. This generates an exectuable which can be run with the next command:
+
+``` yaml
+cargo run
+```
+
+You should see "Hello World" printed. 
+
+### Step 8: Let's Save Our Work!
+
+Enter the following code in your terminal to commit
+
+``` yaml
+git add .
+git commit -m "Hello World in Rust!"
+```
+
+**Note**: If you get the following error
+
+fatal: detected dubious ownership in repository at '/workspaces/go-project'
+To add an exception for this directory, call: git config --global --add safe.directory /workspaces/go-project
+
+Run the code as it says 
+
+``` yaml
+git config --global --add safe.directory /workspaces/go-project
+```
+
+Then add and commit as stated above ^
+
+Finally, run
+
+``` yaml
+git push origin main # (1)
+```
+
+1. Now our Github has all of our work!

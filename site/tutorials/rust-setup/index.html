@@ -533,19 +533,25 @@
 <p>Reviewer: <a href="https://github.com/calowe2">Cassidy Lowe</a></p>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is me proving I can add an admonition to the page!</p>
-</div>
 <h2 id="step-by-step-tutorial-on-how-to-set-up-a-dev-container-for-rust">Step by step tutorial on how to set up a Dev Container for Rust</h2>
 <h3 id="important">Important:</h3>
 <p>You will not need to install anything directly to your host machine since we are using a Dev Container. Since we are running Linux in our Dev Container, you should not expect to see a .exe file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you do not install anything! If you install directly to your host machine you are following this tutorial wrong. </p>
+</div>
 <h3 id="rust">Rust</h3>
 <p>Rust is a programming language that acts as an alternative to C and C++ in many applications. It is used due to its superior performance, memory safety, and its concurrency.</p>
 <h4 id="what-you-need-to-have-installed-before-you-continue">What you need to have installed before you continue:</h4>
 <ul>
 <li>VSCode</li>
 <li>Docker (must be running)</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>MAKE SURE DOCKER IS RUNNING!</p>
+</div>
+<ul>
 <li>Git  </li>
 </ul>
 <h3 id="step-1-creating-a-directory-initializing-git-and-creating-a-readme">Step 1: Creating a Directory, Initializing Git, and Creating a Readme</h3>
@@ -616,15 +622,13 @@
 <span class="w">    </span><span class="s">&quot;image&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;mcr.microsoft.com/devcontainers/rust:latest&quot;</span><span class="p p-Indicator">,</span>
 <span class="w">    </span><span class="s">&quot;customizations&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span>
 <span class="w">        </span><span class="s">&quot;vscode&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span>
-<span class="w">        </span><span class="s">&quot;settings&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span>
-<span class="w">        </span><span class="s">&quot;go.useLanguageServer&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="nv">true</span>
 <span class="w">    </span><span class="p p-Indicator">},</span>
 <span class="w">    </span><span class="s">&quot;extensions&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span>
 <span class="w">      </span><span class="s">&quot;rust-lang.rust-analyzer&quot;</span>
 <span class="w">    </span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="p p-Indicator">}</span>
 <span class="p p-Indicator">}</span>
-<span class="p p-Indicator">}</span>
+<span class="err">}</span>
 </code></pre></div>
 
 
