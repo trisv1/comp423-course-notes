@@ -3,14 +3,15 @@
 * Primary author: [Trisha](https://github.com/trisv1)
 
 * Reviewer: [Cassidy Lowe](https://github.com/calowe2)
-!!! note
 
-    This is me proving I can add an admonition to the page!
 ## Step by step tutorial on how to set up a Dev Container for Rust
 
 ### Important:
 
 You will not need to install anything directly to your host machine since we are using a Dev Container. Since we are running Linux in our Dev Container, you should not expect to see a .exe file.
+!!! note
+
+    Make sure you do not install anything! If you install directly to your host machine you are following this tutorial wrong. 
 
 ### Rust 
 
@@ -20,6 +21,9 @@ Rust is a programming language that acts as an alternative to C and C++ in many 
 
 * VSCode
 * Docker (must be running)
+!!! IMPORTANT
+    MAKE SURE DOCKER IS RUNNING!
+    
 * Git  
 
 
