@@ -186,7 +186,7 @@ To add an exception for this directory, call: git config --global --add safe.dir
 Run the code as it says 
 
 ``` yaml
-git config --global --add safe.directory /workspaces/go-project
+git config --global --add safe.directory /workspaces/rust-project
 ```
 
 Then add and commit as stated above ^
@@ -194,7 +194,7 @@ Then add and commit as stated above ^
 Finally, run
 
 ``` yaml
-git push origin main # (1)
+git push origin main
 ```
 
 1. Now our Github has all of our work!

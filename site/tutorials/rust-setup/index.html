@@ -629,13 +629,13 @@
 <h3 id="step-1-creating-a-directory-initializing-git-and-creating-a-readme">Step 1: Creating a Directory, Initializing Git, and Creating a Readme</h3>
 <p>Run the following commands in your system's terminal:</p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mkdir rust-project</span>
-<span class="l l-Scalar l-Scalar-Plain">cd rust-project</span><span class="w"> </span><span class="c1"># (1)</span>
+<span class="l l-Scalar l-Scalar-Plain">cd rust-project</span>
 </code></pre></div>
 <ol>
 <li>We have created and entered a new directory for the rest of our setup.</li>
 </ol>
 <p>Next, run the following command</p>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git init</span><span class="w"> </span><span class="c1"># (1)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git init</span>
 </code></pre></div>
 <ol>
 <li>This is the git initialization command</li>
@@ -643,7 +643,7 @@
 <p>Create a Readme file with the following code </p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">echo &quot;# Rust README&quot;&gt; README.md</span>
 <span class="l l-Scalar l-Scalar-Plain">git add README.md</span>
-<span class="l l-Scalar l-Scalar-Plain">git commit -m &quot;Initial commit with README&quot;</span><span class="w"> </span><span class="c1"># (1)</span>
+<span class="l l-Scalar l-Scalar-Plain">git commit -m &quot;Initial commit with README&quot;</span>
 </code></pre></div>
 <h3 id="step-2-setting-up-a-remote-repository-on-github">Step 2: Setting up a Remote Repository on GitHub</h3>
 <ul>
@@ -667,7 +667,7 @@
 <ul>
 <li>Run the following command in your terminal, replacing the "your-username" with your GitHub username: </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git remote add origin https://github.com/&lt;your-username&gt;/go-project.git</span><span class="w"> </span><span class="c1"># (1)</span>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git remote add origin https://github.com/&lt;your-username&gt;/rust-project.git</span>
 </code></pre></div>
 <p>Check your default branch name with the subcommand git branch. If it's not main, rename it using the following command: </p>
 <div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git branch -M main.</span>
