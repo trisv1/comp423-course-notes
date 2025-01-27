@@ -378,6 +378,42 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#step-5-reopen-the-dev-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Reopen the Dev Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-try-it-out-by-adding-a-hello-world-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Try it Out by Adding a Hello World Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-compile-and-run-your-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Compile and Run Your Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-lets-save-our-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Let's Save Our Work!
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -504,6 +540,42 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#step-5-reopen-the-dev-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Reopen the Dev Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-try-it-out-by-adding-a-hello-world-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Try it Out by Adding a Hello World Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-compile-and-run-your-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Compile and Run Your Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-lets-save-our-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Let's Save Our Work!
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -617,19 +689,63 @@
 </ol>
 <p><strong>.devcontainer/devcontainer.json</strong></p>
 <p>Add the following code to your devcontainer.json file:</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">{</span>
-<span class="w">    </span><span class="s">&quot;name&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;Rust</span><span class="nv"> </span><span class="s">Project&quot;</span><span class="p p-Indicator">,</span>
+<p><div class="highlight"><pre><span></span><code><span class="p p-Indicator">{</span>
+<span class="w">    </span><span class="s">&quot;name&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;Rust</span><span class="nv"> </span><span class="s">Development</span><span class="nv"> </span><span class="s">Environment&quot;</span><span class="p p-Indicator">,</span>
 <span class="w">    </span><span class="s">&quot;image&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;mcr.microsoft.com/devcontainers/rust:latest&quot;</span><span class="p p-Indicator">,</span>
 <span class="w">    </span><span class="s">&quot;customizations&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span>
 <span class="w">        </span><span class="s">&quot;vscode&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span>
-<span class="w">    </span><span class="p p-Indicator">},</span>
-<span class="w">    </span><span class="s">&quot;extensions&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span>
-<span class="w">      </span><span class="s">&quot;rust-lang.rust-analyzer&quot;</span>
-<span class="w">    </span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="p p-Indicator">}</span>
+<span class="w">            </span><span class="s">&quot;extensions&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span>
+<span class="w">                </span><span class="s">&quot;rust-lang.rust-analyzer&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">}</span>
+<span class="w">    </span><span class="p p-Indicator">}</span>
 <span class="p p-Indicator">}</span>
-<span class="err">}</span>
 </code></pre></div>
+This file sets up your dev container environment ensuring that it is consistent and reproducible. Here we specify that the name of our dev container is "Rust Project". Image is the image Docker is going to use, customizations adds useful configurations to VS Code such as telling it to use the Rust Language Analyzer, and our extensions installs Rust in the container so that we do not need to install on our host machine.  </p>
+<h3 id="step-5-reopen-the-dev-container">Step 5: Reopen the Dev Container</h3>
+<p>Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option.  </p>
+<p>Run the Command </p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">rustc --version</span>
+</code></pre></div>
+<p>to prove a recent version of Rust</p>
+<h3 id="step-6-try-it-out-by-adding-a-hello-world-example">Step 6: Try it Out by Adding a Hello World Example</h3>
+<p>Create a new Hello World directory using the following command</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cargo new hello_world --vcs none</span>
+</code></pre></div>
+<p>Next move into the hellow-world directory with the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cd hello_world</span>
+</code></pre></div>
+<p>There should already exist a main.rs file with the following code:</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">fn main() {</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">println!(&quot;Hello, world!&quot;);</span>
+<span class="l l-Scalar l-Scalar-Plain">}</span>
+</code></pre></div>
+<h3 id="step-7-compile-and-run-your-project">Step 7: Compile and Run Your Project</h3>
+<p>Run the following code to compile and run your project!</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cargo build</span>
+</code></pre></div>
+<p>This command is similar to the command gcc which we learned in 211. This generates an exectuable which can be run with the next command:</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">cargo run</span>
+</code></pre></div>
+<p>You should see "Hello World" printed. </p>
+<h3 id="step-8-lets-save-our-work">Step 8: Let's Save Our Work!</h3>
+<p>Enter the following code in your terminal to commit</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git add .</span>
+<span class="l l-Scalar l-Scalar-Plain">git commit -m &quot;Hello World in Rust!&quot;</span>
+</code></pre></div>
+<p><strong>Note</strong>: If you get the following error</p>
+<p>fatal: detected dubious ownership in repository at '/workspaces/go-project'
+To add an exception for this directory, call: git config --global --add safe.directory /workspaces/go-project</p>
+<p>Run the code as it says </p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git config --global --add safe.directory /workspaces/go-project</span>
+</code></pre></div>
+<p>Then add and commit as stated above ^</p>
+<p>Finally, run</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">git push origin main</span><span class="w"> </span><span class="c1"># (1)</span>
+</code></pre></div>
+<ol>
+<li>Now our Github has all of our work!</li>
+</ol>
 
 
 

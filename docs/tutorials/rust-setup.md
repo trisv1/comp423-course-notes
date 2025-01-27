@@ -33,7 +33,7 @@ Run the following commands in your system's terminal:
 
 ``` yaml
 mkdir rust-project
-cd rust-project # (1)
+cd rust-project
 ```
 
 1.   We have created and entered a new directory for the rest of our setup.
@@ -41,7 +41,7 @@ cd rust-project # (1)
 Next, run the following command
 
 ``` yaml
-git init # (1)
+git init
 ```
 
 1.   This is the git initialization command
@@ -51,7 +51,7 @@ Create a Readme file with the following code
 ``` yaml
 echo "# Rust README"> README.md
 git add README.md
-git commit -m "Initial commit with README" # (1)
+git commit -m "Initial commit with README"
 ```
 
 ### Step 2: Setting up a Remote Repository on GitHub
@@ -76,7 +76,7 @@ git commit -m "Initial commit with README" # (1)
 * Run the following command in your terminal, replacing the "your-username" with your GitHub username: 
 
 ``` yaml
-git remote add origin https://github.com/<your-username>/go-project.git # (1)
+git remote add origin https://github.com/<your-username>/rust-project.git
 ```
 
 Check your default branch name with the subcommand git branch. If it's not main, rename it using the following command: 
